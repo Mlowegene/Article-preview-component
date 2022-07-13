@@ -121,13 +121,6 @@ body {
 }
 
 .triangle {
-    /* width: 20px;
-    height: 20px;
-    background-color: hsl(217, 19%, 35%);
-    position: absolute;
-    top: 51%;
-    left: 68%;
-    transform: rotate(0deg) rotate(45deg); */
 
   width: 0; 
   height: 0; 
@@ -141,9 +134,8 @@ body {
 }
 
 .hideShow {
-    display: block;
+    display: none;
 }
-
 
 
 .attribution { 
