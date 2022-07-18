@@ -27,7 +27,6 @@ body {
 .card {
     margin-top: 10rem;
     width: 37rem;
-    /* height: 15rem; */
     background-color: white;
     display: flex;
     border-radius: 10px;
@@ -90,11 +89,12 @@ body {
     filter: white;
 }
 
-.icon_share:active {
+/* .icon_share:active {
     background-color: hsl(214, 17%, 51%);
     
-}
+} */
 
+/* ------------------social media icon popup------------ */
 
 .popUp {
     background-color: hsl(217, 19%, 35%);
@@ -145,4 +145,87 @@ body {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* ==============Media queries =============== */
+
+@media only screen  and (max-width: 500px) {
+ 
+    .card {
+        margin-top: 10rem;
+        width: 20rem;
+        height: 29rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+       }
+       .image{
+        background-image: url(./images/drawers.jpg);
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+        height: 13rem;
+        width: 20rem;
+        
+    }
+    .desc {
+        text-align: left;
+        color: hsl(217, 19%, 35%);
+        width: 17rem;
+        margin: 1.6rem;
+    
+    }
+    .desc h3 {
+        padding-bottom: .5rem;
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .footer p {
+        font-weight: 700;
+        margin-right: 5rem;
+    }
+    .footer p span {
+        display: block;
+        font-weight: 500;
+    }
+
+
+    .attribution { 
+        display: none;
+    }
+
+    /* ----------social popup of responsive ------ */
+
+    .popUp {
+        background-color: hsl(217, 19%, 35%);
+        color: hsl(212, 23%, 69%);
+        padding: .5rem;
+        width: 20rem;
+        border-radius: 0 0 10px 10px;
+        height: 4.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 50%;
+        left: 18%;
+        box-shadow: 5px 5px 5px -4px;
+    }
+    
+    .popUp p {
+        letter-spacing: 3px;
+    }
+    
+    .popUp img {
+        margin: .2rem;
+    }
+
+    .triangle {
+        display: none;
+      }
+    
+
 }
