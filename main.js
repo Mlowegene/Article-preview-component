@@ -12,7 +12,7 @@ function popUp() {
     }
 }
 
-const btnClick = document.getElementById("share");
+const btnClick = document.querySelector(".share");
 btnClick.addEventListener('click', popUp);
 
 
